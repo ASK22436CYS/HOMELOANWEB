@@ -7,6 +7,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.homeloan.beans.User;
@@ -25,8 +26,18 @@ public class DashboardController {
     public String displayDashboard(Model model){
 		String user= returnUsername();
         model.addAttribute("userDetails", user);
-        return "dashboard";
+        return "DashBord";
     }
+	
+	@PostMapping("/homeLoan")
+	public String emitab() {
+		return "EMICalculation";
+	}
+	
+	@PostMapping("/loanOffer")
+	public String loanOffering() {
+		return "LoanOffering";
+	}
 	
 	private String returnUsername() {
 		SecurityContext securityContext = SecurityContextHolder.getContext();
