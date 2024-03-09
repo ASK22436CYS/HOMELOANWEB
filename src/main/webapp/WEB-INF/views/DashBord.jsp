@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Main Page</title>
+    <title>Home Loan Home Page</title>
     <style>
         .search-box {
     float: right;

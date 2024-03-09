@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Home Loan Register</title>
 </head>
 <body>
 <div class="formbold-main-wrapper">
